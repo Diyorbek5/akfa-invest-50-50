@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "routes": [
+    {
+      "src": "/akfa-investor-presentation.html",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

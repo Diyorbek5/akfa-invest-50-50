@@ -1,0 +1,13 @@
+{
+  "name": "akfa-invest",
+  "version": "1.0.0",
+  "description": "AKFA Dilerlik Biznesi — Investor Prezentatsiyasi",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1",
+    "xlsx": "^0.18.5"
+  }
+}
