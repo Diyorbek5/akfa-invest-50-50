@@ -545,7 +545,7 @@ html, body {
 
     <div class="slide-footer">
       <span>AKFA DILERLIK BIZNESI</span>
-      <span>02 / 11</span>
+      <span>02 / 12</span>
       <span>KOMPANIYA PROFILI</span>
     </div>
   </div>
@@ -712,7 +712,7 @@ html, body {
 
     <div class="slide-footer">
       <span>AKFA DILERLIK BIZNESI</span>
-      <span>03 / 11</span>
+      <span>03 / 12</span>
       <span>KPI METRIKALAR TAHLILI</span>
     </div>
   </div>
@@ -806,7 +806,7 @@ html, body {
 
     <div class="slide-footer">
       <span>AKFA DILERLIK BIZNESI</span>
-      <span>04 / 11</span>
+      <span>04 / 12</span>
       <span>STRATEGIK AVZALLIKLAR</span>
     </div>
   </div>
@@ -928,7 +928,7 @@ html, body {
 
     <div class="slide-footer">
       <span>AKFA DILERLIK BIZNESI</span>
-      <span>05 / 11</span>
+      <span>05 / 12</span>
       <span>FILIALLAR TARMOG'I</span>
     </div>
   </div>
@@ -1036,7 +1036,7 @@ html, body {
 
     <div class="slide-footer">
       <span>AKFA DILERLIK BIZNESI</span>
-      <span>06 / 11</span>
+      <span>06 / 12</span>
       <span>FILIALLAR VIZUAL ARXITEKTURASI</span>
     </div>
   </div>
@@ -1116,7 +1116,7 @@ html, body {
 
     <div class="slide-footer">
       <span>AKFA DILERLIK BIZNESI</span>
-      <span>07 / 11</span>
+      <span>07 / 12</span>
       <span>INVESTOR TAKLIFI</span>
     </div>
   </div>
@@ -1218,7 +1218,7 @@ html, body {
 
     <div class="slide-footer">
       <span>AKFA DILERLIK BIZNESI</span>
-      <span>08 / 11</span>
+      <span>08 / 12</span>
       <span>INVESTOR PROGNOZI KPI</span>
     </div>
   </div>
@@ -1291,12 +1291,11 @@ html, body {
             <td class="num">26,000,000,000</td>
             <td class="num" style="color:var(--green);">900,000,000</td>
           </tr>
-          <!-- Iyul: 1,040,000,000 so'm -->
-          <tr style="background:rgba(238,53,38,0.14);">
-            <td><strong style="color:var(--akfa-red);">7</strong></td>
-            <td><strong style="color:var(--white);">Iyul</strong></td>
-            <td class="num" style="color:var(--white);font-weight:800;">27,000,000,000</td>
-            <td class="num" style="color:#6EE7B7;font-weight:900;font-size:15px;">1,040,000,000</td>
+          <tr>
+            <td>7</td>
+            <td>Iyul</td>
+            <td class="num">27,000,000,000</td>
+            <td class="num" style="color:var(--green);">1,040,000,000</td>
           </tr>
           <tr>
             <td>8</td>
@@ -1341,7 +1340,7 @@ html, body {
 
     <div class="slide-footer">
       <span>AKFA DILERLIK BIZNESI</span>
-      <span>09 / 11</span>
+      <span>09 / 12</span>
       <span>12 OYLIK REJA JADVALI</span>
     </div>
   </div>
@@ -1448,7 +1447,7 @@ html, body {
 
     <div class="slide-footer">
       <span>AKFA DILERLIK BIZNESI</span>
-      <span>10 / 11</span>
+      <span>10 / 12</span>
       <span>OYLIK GRAFIKLAR TAHLILI</span>
     </div>
   </div>
@@ -1456,9 +1455,73 @@ html, body {
 
 
 <!-- ===================================================================
-     PAGE 11 (Slide 27): RAHMAT (YAKUNIY SAHIFA)
+     PAGE 11: YANGI HAMKORLIGIMIZ BARAKALI BO'LSIN
      =================================================================== -->
 <section class="slide-page" id="page-11">
+  <div class="bg-layer">
+    <img src="${heroBgBase64}" class="bg-img" style="opacity:0.2;" alt="">
+    <div class="bg-overlay"></div>
+    <div class="bg-pattern"></div>
+  </div>
+
+  <div class="slide-content" style="justify-content:space-between;text-align:center;">
+    <!-- Top Bar with Logo -->
+    <div style="display:flex;justify-content:space-between;align-items:center;width:100%;">
+      <div class="section-badge" style="margin:0;">STRATEGIK HAMKORLIK</div>
+      <div class="akfa-logo-pill" style="margin:0;">
+        <img src="${akfaLogoBase64}" alt="AKFA" class="akfa-logo-img">
+      </div>
+    </div>
+
+    <!-- Center -->
+    <div style="max-width:900px;margin:auto;">
+      <h1 style="font-size:56px;font-weight:900;line-height:1.1;letter-spacing:-1.5px;margin-bottom:8px;">
+        Yangi Hamkorligimiz <span class="red-accent">Barakali Bo'lsin!</span>
+      </h1>
+      <p style="font-size:16px;color:var(--silver);margin-bottom:16px;">
+        AKFA Dilerlik Biznesi & Investor — Ishonchli Sheriklik va Muvaffaqiyatli Kelajak Sari
+      </p>
+
+      <!-- Handshake Image Container -->
+      <div style="position:relative;width:560px;height:240px;margin:0 auto 18px auto;border-radius:14px;overflow:hidden;border:1px solid rgba(238,53,38,0.5);box-shadow:0 16px 44px rgba(0,0,0,0.7), 0 0 30px rgba(238,53,38,0.18);">
+        <img src="${handshakeBase64}" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;display:block;" alt="Hamkorlik Qo'l Siqishish">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(20,21,23,0.02) 0%, rgba(20,21,23,0.15) 60%, rgba(20,21,23,0.85) 100%);"></div>
+        <div style="position:absolute;bottom:12px;left:0;right:0;display:flex;justify-content:center;gap:12px;">
+          <div style="background:rgba(20,21,23,0.85);border:1px solid rgba(238,53,38,0.6);border-radius:20px;padding:5px 18px;font-size:12px;font-weight:700;color:#FFA59C;backdrop-filter:blur(6px);">
+            🤝 Strategik Hamkorlik
+          </div>
+          <div style="background:rgba(20,21,23,0.85);border:1px solid rgba(16,185,129,0.6);border-radius:20px;padding:5px 18px;font-size:12px;font-weight:700;color:#6EE7B7;backdrop-filter:blur(6px);">
+            💼 Ishonchli va Barqaror Kelajak
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <div style="background:rgba(238,53,38,0.15);border:1px solid rgba(238,53,38,0.5);border-radius:30px;padding:9px 24px;font-size:13.5px;font-weight:700;color:#FFA59C;">
+          🤝 O'zaro Manfaatli Hamkorlik
+        </div>
+        <div style="background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.5);border-radius:30px;padding:9px 24px;font-size:13.5px;font-weight:700;color:#6EE7B7;">
+          📈 Barqaror O'sish & Yuqori Daromad
+        </div>
+        <div style="background:rgba(185,190,194,0.15);border:1px solid rgba(185,190,194,0.35);border-radius:30px;padding:9px 24px;font-size:13.5px;font-weight:700;color:var(--white);">
+          🔒 100% Shaffof va Himoyalangan Kapital
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-footer" style="border-top:none;">
+      <span>AKFA DEALERSHIP GROUP</span>
+      <span style="letter-spacing:2px;color:var(--akfa-red);font-weight:700;">INVESTOR TAQDIMOTI • 2026</span>
+      <span>11 / 12</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================================
+     PAGE 12 (Slide 27): RAHMAT (YAKUNIY SAHIFA)
+     =================================================================== -->
+<section class="slide-page" id="page-12">
   <div class="bg-layer">
     <img src="${heroBgBase64}" class="bg-img" style="opacity:0.2;" alt="">
     <div class="bg-overlay"></div>
@@ -1499,7 +1562,7 @@ html, body {
     <div class="slide-footer" style="border-top:none;">
       <span>AKFA DEALERSHIP GROUP</span>
       <span style="letter-spacing:2px;color:var(--akfa-red);font-weight:700;">INVESTOR TAQDIMOTI • 2026</span>
-      <span>11 / 11</span>
+      <span>12 / 12</span>
     </div>
   </div>
 </section>
