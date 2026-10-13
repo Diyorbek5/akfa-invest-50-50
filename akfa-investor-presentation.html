@@ -623,11 +623,94 @@ body {
   justify-content: center;
   font-size: 14px;
 }
+
+/* Hero Slide Product Cards Showcase */
+.hero-products-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1100px;
+  margin: 18px auto 0 auto;
+}
+.hero-product-card {
+  background: rgba(36, 38, 40, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 10px;
+  text-align: left;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+.hero-product-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(238, 53, 38, 0.6);
+  box-shadow: 0 12px 28px rgba(238, 53, 38, 0.16), 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+.hero-product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--akfa-red), #FF6B5A);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.hero-product-card:hover::before {
+  opacity: 1;
+}
+.hero-product-img-wrap {
+  width: 100%;
+  height: 98px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background: #171819;
+  position: relative;
+}
+.hero-product-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+.hero-product-card:hover .hero-product-img-wrap img {
+  transform: scale(1.06);
+}
+.hero-product-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--akfa-red);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 2px;
+}
+.hero-product-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.25;
+  margin-bottom: 2px;
+}
+.hero-product-desc {
+  font-size: 11px;
+  color: var(--silver);
+  line-height: 1.35;
+}
+
 </style>
 </head>
 <body>
 <div id="progress-bar" style="width:0%"></div>
-<div id="slide-counter">01 / 27</div>
+<div id="slide-counter">01 / 30</div>
 <div id="nav-dots"></div>
 <div class="scroll-hint">
 <span>Navigatsiya:</span>
@@ -639,17 +722,57 @@ body {
 <!-- ======================= SLIDE 1: HERO COVER ======================= -->
 <div class="slide dark active" data-slide="0">
 <img src="assets/hero-bg.jpg" class="bg-image" style="opacity:0.2" alt="">
-<div class="bg-overlay" style="background:linear-gradient(135deg,rgba(23,24,25,0.88),rgba(36,38,40,0.82))"></div>
+<div class="bg-overlay" style="background:linear-gradient(135deg,rgba(23,24,25,0.92),rgba(36,38,40,0.85))"></div>
 <div class="slide-inner" style="text-align:center">
 <div class="section-label" id="hero-label">Investor Prezentatsiyasi</div>
-<h1 class="hero-title" id="hero-title">AKFA Dilerlik<br><span class="red-accent">Biznesi</span></h1>
-<p class="lead" style="margin:0 auto 32px;max-width:650px">AKFA kompaniyasining barcha turdagi mahsulotlari uchun dilerlik faoliyati. Profillar, aksessuarlar, isitish sistemalari va radiatorlari savdosi.</p>
-<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px">
-<div style="background:rgba(238,53,38,0.12);border:1px solid rgba(238,53,38,0.3);border-radius:40px;padding:10px 24px;font-size:13px;font-weight:600">4 ta filial</div>
-<div style="background:rgba(238,53,38,0.12);border:1px solid rgba(238,53,38,0.3);border-radius:40px;padding:10px 24px;font-size:13px;font-weight:600">400 ta hamkor sex</div>
-<div style="background:rgba(238,53,38,0.12);border:1px solid rgba(238,53,38,0.3);border-radius:40px;padding:10px 24px;font-size:13px;font-weight:600">7 yillik tajriba</div>
+<h1 class="hero-title" id="hero-title" style="font-size:46px;margin-bottom:8px;line-height:1.1">AKFA Dilerlik <span class="red-accent">Biznesi</span></h1>
+<p class="lead" style="margin:0 auto 10px;max-width:700px;font-size:14.5px;line-height:1.45">AKFA kompaniyasining barcha turdagi mahsulotlari uchun dilerlik faoliyati. Profillar, aksessuarlar, isitish sistemalari va radiatorlar savdosi.</p>
+<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:14px">
+<div style="background:rgba(238,53,38,0.12);border:1px solid rgba(238,53,38,0.3);border-radius:40px;padding:6px 20px;font-size:12px;font-weight:600">4 ta filial</div>
+<div style="background:rgba(238,53,38,0.12);border:1px solid rgba(238,53,38,0.3);border-radius:40px;padding:6px 20px;font-size:12px;font-weight:600">400 ta hamkor sex</div>
+<div style="background:rgba(238,53,38,0.12);border:1px solid rgba(238,53,38,0.3);border-radius:40px;padding:6px 20px;font-size:12px;font-weight:600">7 yillik tajriba</div>
 </div>
-<p style="margin-top:32px;font-size:12px;color:var(--neutral);letter-spacing:2px">KONFIDENTSIAL • INVESTOR UCHUN</p>
+
+<!-- Product Showcase Row -->
+<div class="hero-products-row">
+  <div class="hero-product-card">
+    <div class="hero-product-img-wrap">
+      <img src="assets/akfa_termo_profiles.jpg" alt="AKFA Termo profillari">
+    </div>
+    <div class="hero-product-badge">AKFA Termo</div>
+    <div class="hero-product-title">Termo Profillar</div>
+    <div class="hero-product-desc">Alyuminiy arxitektura va termo-ko'prik tizimlari</div>
+  </div>
+
+  <div class="hero-product-card">
+    <div class="hero-product-img-wrap">
+      <img src="assets/akfa_pvx_profiles.jpg" alt="AKFA PVX profillari">
+    </div>
+    <div class="hero-product-badge">AKFA PVX</div>
+    <div class="hero-product-title">PVX Profillari</div>
+    <div class="hero-product-desc">Ko'p kamerali zamonaviy rom va eshik profillari</div>
+  </div>
+
+  <div class="hero-product-card">
+    <div class="hero-product-img-wrap">
+      <img src="assets/akfa_accessories.jpg" alt="Aksessuarlar va furnitura">
+    </div>
+    <div class="hero-product-badge">AKFA Furnitura</div>
+    <div class="hero-product-title">Aksessuarlar Tizimi</div>
+    <div class="hero-product-desc">Original qulflar, tutqichlar va tutashtiruvchi mexanizmlar</div>
+  </div>
+
+  <div class="hero-product-card">
+    <div class="hero-product-img-wrap">
+      <img src="assets/akfa_heating_radiators.jpg" alt="Isitish sistemalari va radiatorlar">
+    </div>
+    <div class="hero-product-badge">AKFA Comfort</div>
+    <div class="hero-product-title">Isitish & Radiatorlar</div>
+    <div class="hero-product-desc">Alyuminiy, bimetall & zamonaviy panel radiatorlari</div>
+  </div>
+</div>
+
+<p style="margin-top:12px;font-size:11px;color:var(--neutral);letter-spacing:2px">KONFIDENTSIAL • INVESTOR UCHUN</p>
 </div>
 </div>
 
@@ -755,11 +878,13 @@ body {
 <h3 class="sub-title">Bozor hajmi</h3>
 <div class="chart-container">
 <table class="fin-table">
-<thead><tr><th>Hudud</th><th class="num">Bozor hajmi</th><th class="num">Bizning ulush</th></tr></thead>
+<thead><tr><th>Filial</th><th class="num">Hamkor sexlar</th><th class="num">Tarmoqdagi ulushi</th><th class="num">Xodimlar soni</th></tr></thead>
 <tbody>
-<tr><td>Toshkent viloyati profil bozori</td><td class="num">3 mln $/oy</td><td class="num" style="color:var(--akfa-red);font-weight:700">30%</td></tr>
-<tr><td>Sirdaryo viloyati bozori</td><td class="num">2 mln $</td><td class="num" style="color:var(--akfa-red);font-weight:700">30%</td></tr>
-<tr><td>Toshkent shahri profil bozori</td><td class="num">25–30 mln $</td><td class="num">&lt;1%</td></tr>
+<tr><td><strong>Olmaliq</strong></td><td class="num">110</td><td class="num">27.5%</td><td class="num">15 ta</td></tr>
+<tr><td><strong>Guliston</strong></td><td class="num">110</td><td class="num">27.5%</td><td class="num">14 ta</td></tr>
+<tr><td><strong>Bo'ka</strong></td><td class="num">90</td><td class="num">22.5%</td><td class="num">8 ta</td></tr>
+<tr><td><strong>Yangiyo'l</strong></td><td class="num">90</td><td class="num">22.5%</td><td class="num">6 ta</td></tr>
+<tr class="total-row"><td><strong>Jami</strong></td><td class="num"><strong>400</strong></td><td class="num"><strong>100%</strong></td><td class="num"><strong>43 ta</strong></td></tr>
 </tbody>
 </table>
 </div>
@@ -879,6 +1004,7 @@ body {
       <div class="branch-stats-row">
         <div class="branch-pill"><span class="stat-num">110</span> hamkor sex</div>
         <div class="branch-pill"><span class="stat-num">27.5%</span> tarmoqdagi ulush</div>
+        <div class="branch-pill"><span class="stat-num">14 ta</span> xodimlar soni</div>
       </div>
     </div>
     <p class="body-text branch-desc">Sirdaryo viloyatining Guliston shahrida joylashgan. Olmaliq bilan birga eng katta hamkorlar bazasiga ega filial.</p>
@@ -903,6 +1029,7 @@ body {
       <div class="branch-stats-row">
         <div class="branch-pill"><span class="stat-num">90</span> hamkor sex</div>
         <div class="branch-pill"><span class="stat-num">22.5%</span> tarmoqdagi ulush</div>
+        <div class="branch-pill"><span class="stat-num">8 ta</span> xodimlar soni</div>
       </div>
     </div>
     <p class="body-text branch-desc">Toshkent viloyatining Bo'ka tumanida joylashgan. 90 ta hamkor sex bilan faoliyat yuritadi.</p>
@@ -927,6 +1054,7 @@ body {
       <div class="branch-stats-row">
         <div class="branch-pill"><span class="stat-num">90</span> hamkor sex</div>
         <div class="branch-pill"><span class="stat-num">22.5%</span> tarmoqdagi ulush</div>
+        <div class="branch-pill"><span class="stat-num">6 ta</span> xodimlar soni</div>
       </div>
     </div>
     <p class="body-text branch-desc">Toshkent viloyatining Yangiyo'l tumanida joylashgan. Bo'ka bilan birga 90 ta hamkor sex bilan ishlaydi.</p>
@@ -1291,11 +1419,110 @@ body {
 </div>
 
 <!-- ======================= SLIDE 22: FORECAST KPI ======================= -->
+<!-- ======================= 1-SENARIY: BUGUNGI KUNDAGI MARJINALNOST ======================= -->
+<!-- SLIDE 22: FORECAST 1 - OVERVIEW -->
 <div class="slide graphite" data-slide="21">
 <div class="bg-pattern"></div>
 <div class="slide-inner">
-<div class="section-label">Investor prognozi</div>
+<div class="section-label">Investor prognozi — 1-senariy</div>
 <h2 class="slide-title">Bugungi Kundagi Marjinalnostda Investor Prognozi — <span class="red-accent">Umumiy Ko'rinish</span></h2>
+<div class="kpi-grid" style="grid-template-columns:repeat(2,1fr)">
+<div class="kpi-card">
+<div class="kpi-value" data-count="276" data-suffix=" mlrd">0</div>
+<div class="kpi-label">Prognoz Aylanma (so'm)</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-value" data-count="8.94" data-suffix=" mlrd" data-decimals="2">0</div>
+<div class="kpi-label">Prognoz Foyda (so'm)</div>
+</div>
+</div>
+<div class="scenario-note" style="margin-top:20px">
+<strong>Prognoz asoslari:</strong> Prognoz yillik aylanmasi 276 mlrd so'm, yillik prognoz foydasi 8.94 mlrd so'm. O'rtacha oylik prognoz daromad: <strong>745 mln so'm</strong>. Aylanmada turadigan o'rtacha kapital: <strong>3,000,000 $</strong>.
+</div>
+<p class="body-text" style="margin-top:16px"><strong style="color:var(--white)">Prognoz va tarixiy natijalar taqqoslanishi:</strong></p>
+<p class="body-text">Prognoz aylanmasi (276 mlrd) 2023-yildan <strong>+42.8%</strong> yuqori, 2025-yildan <strong>+107.3%</strong> yuqori. Prognoz foydasi (8.94 mlrd) 2023-yildan <strong>+51.0%</strong> yuqori, 2025-yildan <strong>+244.9%</strong> yuqori.</p>
+</div>
+</div>
+
+<!-- SLIDE 23: FORECAST 1 - MONTHLY TABLE -->
+<div class="slide light" data-slide="22">
+<div class="slide-inner">
+<div class="section-label">Investor prognozi — 1-senariy</div>
+<h2 class="slide-title">Bugungi Kundagi Marjinalnostda Investor Prognozi — <span class="red-accent">12 Oylik Jadval</span></h2>
+<table class="fin-table">
+<thead><tr><th>№</th><th>Oy</th><th class="num">Aylanma (so'm)</th><th class="num">Foyda (so'm)</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Yanvar</td><td class="num">16,000,000,000</td><td class="num">420,000,000</td></tr>
+<tr><td>2</td><td>Fevral</td><td class="num">17,000,000,000</td><td class="num">460,000,000</td></tr>
+<tr><td>3</td><td>Mart</td><td class="num">18,000,000,000</td><td class="num">500,000,000</td></tr>
+<tr><td>4</td><td>Aprel</td><td class="num">21,000,000,000</td><td class="num">620,000,000</td></tr>
+<tr><td>5</td><td>May</td><td class="num">24,000,000,000</td><td class="num">820,000,000</td></tr>
+<tr><td>6</td><td>Iyun</td><td class="num">26,000,000,000</td><td class="num">900,000,000</td></tr>
+<tr><td>7</td><td>Iyul</td><td class="num">27,000,000,000</td><td class="num">940,000,000</td></tr>
+<tr><td>8</td><td>Avgust</td><td class="num">30,000,000,000</td><td class="num">1,060,000,000</td></tr>
+<tr><td>9</td><td>Sentabr</td><td class="num">30,000,000,000</td><td class="num">1,060,000,000</td></tr>
+<tr><td>10</td><td>Oktabr</td><td class="num">26,000,000,000</td><td class="num">900,000,000</td></tr>
+<tr><td>11</td><td>Noyabr</td><td class="num">23,000,000,000</td><td class="num">780,000,000</td></tr>
+<tr><td>12</td><td>Dekabr</td><td class="num">18,000,000,000</td><td class="num">480,000,000</td></tr>
+<tr class="total-row"><td></td><td><strong>JAMI</strong></td><td class="num"><strong>276,000,000,000</strong></td><td class="num"><strong>8,940,000,000</strong></td></tr>
+</tbody>
+</table>
+<p class="body-text" style="margin-top:12px;font-size:13px"><strong>O'rtacha oylik daromad:</strong> <span class="highlight-num">745,000,000</span> so'm. Manba: ichki hisob-kitoblar va prognoz modeli.</p>
+</div>
+</div>
+
+<!-- SLIDE 24: FORECAST 1 - CHARTS -->
+<div class="slide dark" data-slide="23">
+<div class="bg-pattern"></div>
+<div class="slide-inner">
+<div class="section-label">Investor prognozi — 1-senariy</div>
+<h2 class="slide-title">Bugungi Kundagi Marjinalnostda Investor Prognozi — <span class="red-accent">Oylik Aylanma va Foyda</span></h2>
+<div class="two-col">
+<div class="chart-container">
+<div class="chart-title">Prognoz aylanma, mlrd so'm</div>
+<div class="bar-chart" style="height:160px">
+<div class="bar-group"><div class="bar" style="height:53.3%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">16</div></div><div class="bar-label">Y</div></div>
+<div class="bar-group"><div class="bar" style="height:56.7%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">17</div></div><div class="bar-label">F</div></div>
+<div class="bar-group"><div class="bar" style="height:60%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">18</div></div><div class="bar-label">M</div></div>
+<div class="bar-group"><div class="bar" style="height:70%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">21</div></div><div class="bar-label">A</div></div>
+<div class="bar-group"><div class="bar" style="height:80%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">24</div></div><div class="bar-label">M</div></div>
+<div class="bar-group"><div class="bar" style="height:86.7%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">26</div></div><div class="bar-label">I</div></div>
+<div class="bar-group"><div class="bar" style="height:90%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">27</div></div><div class="bar-label">I</div></div>
+<div class="bar-group"><div class="bar" style="height:100%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">30</div></div><div class="bar-label">A</div></div>
+<div class="bar-group"><div class="bar" style="height:100%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">30</div></div><div class="bar-label">S</div></div>
+<div class="bar-group"><div class="bar" style="height:86.7%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">26</div></div><div class="bar-label">O</div></div>
+<div class="bar-group"><div class="bar" style="height:76.7%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">23</div></div><div class="bar-label">N</div></div>
+<div class="bar-group"><div class="bar" style="height:60%;background:linear-gradient(180deg,#EE3526,rgba(238,53,38,0.5))"><div class="bar-value" style="opacity:1">18</div></div><div class="bar-label">D</div></div>
+</div>
+</div>
+<div class="chart-container">
+<div class="chart-title">Prognoz foyda, mln so'm</div>
+<div class="bar-chart" style="height:160px">
+<div class="bar-group"><div class="bar" style="height:39.6%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">420</div></div><div class="bar-label">Y</div></div>
+<div class="bar-group"><div class="bar" style="height:43.4%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">460</div></div><div class="bar-label">F</div></div>
+<div class="bar-group"><div class="bar" style="height:47.2%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">500</div></div><div class="bar-label">M</div></div>
+<div class="bar-group"><div class="bar" style="height:58.5%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">620</div></div><div class="bar-label">A</div></div>
+<div class="bar-group"><div class="bar" style="height:77.4%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">820</div></div><div class="bar-label">M</div></div>
+<div class="bar-group"><div class="bar" style="height:84.9%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">900</div></div><div class="bar-label">I</div></div>
+<div class="bar-group"><div class="bar" style="height:88.7%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">940</div></div><div class="bar-label">I</div></div>
+<div class="bar-group"><div class="bar" style="height:100%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">1060</div></div><div class="bar-label">A</div></div>
+<div class="bar-group"><div class="bar" style="height:100%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">1060</div></div><div class="bar-label">S</div></div>
+<div class="bar-group"><div class="bar" style="height:84.9%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">900</div></div><div class="bar-label">O</div></div>
+<div class="bar-group"><div class="bar" style="height:73.6%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">780</div></div><div class="bar-label">N</div></div>
+<div class="bar-group"><div class="bar" style="height:45.3%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">480</div></div><div class="bar-label">D</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ======================= 2-SENARIY: KELAJAKDAGI SHARTLI MARJINALNOST ======================= -->
+<!-- SLIDE 25: FORECAST 2 - OVERVIEW -->
+<div class="slide graphite" data-slide="24">
+<div class="bg-pattern"></div>
+<div class="slide-inner">
+<div class="section-label">Investor prognozi — 2-senariy</div>
+<h2 class="slide-title">Kelajakdagi Shartli Marjinalnostdagi Investor Prognozi — <span class="red-accent">Umumiy Ko'rinish</span></h2>
 <div class="kpi-grid" style="grid-template-columns:repeat(2,1fr)">
 <div class="kpi-card">
 <div class="kpi-value" data-count="276" data-suffix=" mlrd">0</div>
@@ -1314,11 +1541,11 @@ body {
 </div>
 </div>
 
-<!-- ======================= SLIDE 23: FORECAST MONTHLY TABLE ======================= -->
-<div class="slide light" data-slide="22">
+<!-- SLIDE 26: FORECAST 2 - MONTHLY TABLE -->
+<div class="slide light" data-slide="25">
 <div class="slide-inner">
-<div class="section-label">Investor prognozi</div>
-<h2 class="slide-title">Bugungi Kundagi Marjinalnostda Investor Prognozi — <span class="red-accent">12 Oylik Jadval</span></h2>
+<div class="section-label">Investor prognozi — 2-senariy</div>
+<h2 class="slide-title">Kelajakdagi Shartli Marjinalnostdagi Investor Prognozi — <span class="red-accent">12 Oylik Jadval</span></h2>
 <table class="fin-table">
 <thead><tr><th>№</th><th>Oy</th><th class="num">Aylanma (so'm)</th><th class="num">Foyda (so'm)</th></tr></thead>
 <tbody>
@@ -1331,7 +1558,7 @@ body {
 <tr><td>7</td><td>Iyul</td><td class="num">27,000,000,000</td><td class="num">1,072,000,000</td></tr>
 <tr><td>8</td><td>Avgust</td><td class="num">30,000,000,000</td><td class="num">1,237,000,000</td></tr>
 <tr><td>9</td><td>Sentabr</td><td class="num">30,000,000,000</td><td class="num">1,237,000,000</td></tr>
-<tr><td>10</td><td>Oktabr</td><td class="num">26,000,000,000</td><td class="num">1,017,000,000</td></tr>
+<tr><td>10</td><td>Oktabr</td><td class="num">26,000,000,000</td><td class="num">900,000,000</td></tr>
 <tr><td>11</td><td>Noyabr</td><td class="num">23,000,000,000</td><td class="num">852,000,000</td></tr>
 <tr><td>12</td><td>Dekabr</td><td class="num">18,000,000,000</td><td class="num">577,000,000</td></tr>
 <tr class="total-row"><td></td><td><strong>JAMI</strong></td><td class="num"><strong>276,000,000,000</strong></td><td class="num"><strong>10,224,000,000</strong></td></tr>
@@ -1341,12 +1568,12 @@ body {
 </div>
 </div>
 
-<!-- ======================= SLIDE 24: FORECAST CHARTS ======================= -->
-<div class="slide dark" data-slide="23">
+<!-- SLIDE 27: FORECAST 2 - CHARTS -->
+<div class="slide dark" data-slide="26">
 <div class="bg-pattern"></div>
 <div class="slide-inner">
-<div class="section-label">Investor prognozi</div>
-<h2 class="slide-title">Bugungi Kundagi Marjinalnostda Investor Prognozi — <span class="red-accent">Oylik Aylanma va Foyda</span></h2>
+<div class="section-label">Investor prognozi — 2-senariy</div>
+<h2 class="slide-title">Kelajakdagi Shartli Marjinalnostdagi Investor Prognozi — <span class="red-accent">Oylik Aylanma va Foyda</span></h2>
 <div class="two-col">
 <div class="chart-container">
 <div class="chart-title">Prognoz aylanma, mlrd so'm</div>
@@ -1385,29 +1612,28 @@ body {
 </div>
 </div>
 </div>
-
 <!-- ======================= SLIDE 25: FORECAST vs HISTORICAL ======================= -->
-<div class="slide light" data-slide="24">
+<div class="slide light" data-slide="27">
 <div class="slide-inner">
 <div class="section-label">Prognoz vs tarix</div>
 <h2 class="slide-title">Prognoz va Tarixiy Natijalar <span class="red-accent">Taqqoslanishi</span></h2>
 <div class="chart-container">
 <div class="chart-title">Yillik aylanma va foyda taqqoslanishi (mlrd so'm)</div>
 <table class="fin-table">
-<thead><tr><th>Ko'rsatkich</th><th class="num">2023 (fakt)</th><th class="num">2024 (fakt)</th><th class="num">2025 (fakt)</th><th class="num">Prognoz</th></tr></thead>
+<thead><tr><th>Ko'rsatkich</th><th class="num">2023 (fakt)</th><th class="num">2024 (fakt)</th><th class="num">2025 (fakt)</th><th class="num">Prognoz (Bugungi marja)</th><th class="num">Prognoz (Shartli marja)</th></tr></thead>
 <tbody>
-<tr><td>Aylanma</td><td class="num">193.24 mlrd</td><td class="num">172.20 mlrd</td><td class="num">133.10 mlrd</td><td class="num" style="font-weight:700;color:var(--akfa-red)">276.00 mlrd</td></tr>
-<tr><td>Foyda</td><td class="num">5.92 mlrd</td><td class="num">4.63 mlrd</td><td class="num">2.59 mlrd</td><td class="num" style="font-weight:700;color:var(--akfa-red)">10.22 mlrd</td></tr>
-<tr><td>O'rtacha oylik foyda</td><td class="num">493.5 mln</td><td class="num">385.6 mln</td><td class="num">216.0 mln</td><td class="num" style="font-weight:700;color:var(--akfa-red)">852.0 mln</td></tr>
+<tr><td>Aylanma</td><td class="num">193.24 mlrd</td><td class="num">172.20 mlrd</td><td class="num">133.10 mlrd</td><td class="num" style="font-weight:700;color:var(--akfa-red)">276.00 mlrd</td><td class="num" style="font-weight:700;color:#10B981">276.00 mlrd</td></tr>
+<tr><td>Foyda</td><td class="num">5.92 mlrd</td><td class="num">4.63 mlrd</td><td class="num">2.59 mlrd</td><td class="num" style="font-weight:700;color:var(--akfa-red)">8.94 mlrd</td><td class="num" style="font-weight:700;color:#10B981">10.22 mlrd</td></tr>
+<tr><td>O'rtacha oylik foyda</td><td class="num">493.5 mln</td><td class="num">385.6 mln</td><td class="num">216.0 mln</td><td class="num" style="font-weight:700;color:var(--akfa-red)">745.0 mln</td><td class="num" style="font-weight:700;color:#10B981">852.0 mln</td></tr>
 </tbody>
 </table>
 </div>
-<p class="body-text" style="margin-top:20px"><strong style="color:var(--light-text)">Rivojlanish ko'rsatkichlari:</strong> Prognoz yillik 276 mlrd so'm aylanma va 10.22 mlrd so'm foydani tashkil etib, barcha operatsion yo'nalishlar bo'yicha kuchaytirilgan reja asosida ishlab chiqilgan.</p>
+<p class="body-text" style="margin-top:20px"><strong style="color:var(--light-text)">Rivojlanish ko'rsatkichlari:</strong> Bugungi marjinalnostda yillik prognoz <strong>276 mlrd so'm</strong> aylanma va <strong>8.94 mlrd so'm</strong> (oyiga 745 mln) foydani, kelajakdagi shartli marjinalnostda esa <strong>10.22 mlrd so'm</strong> (oyiga 852 mln) foydani tashkil etadi.</p>
 </div>
 </div>
 
 <!-- ======================= SLIDE 26: BUSINESS FACTORS & PLANS ======================= -->
-<div class="slide light" data-slide="25">
+<div class="slide light" data-slide="28">
 <div class="slide-inner">
 <div class="section-label">Biznes tahlili</div>
 <h2 class="slide-title">Biznes Omillari va <span class="red-accent">Rejalar</span></h2>
@@ -1418,7 +1644,7 @@ body {
 </div>
 <div class="risk-card">
 <div class="risk-title">Prognozning asoslanganligi</div>
-<div class="risk-desc">Prognoz 276 mlrd so'm — 2023-yildan 42.8% yuqori. Pasayish tendensiyasi fonida bu raqamga tovar ostatkamizni yaxshilaymiz, 2-3 baravarga oshiramiz, yetkazib berish uchun qo'shimcha transportlar olamiz, B2B sektorida faollashamiz, Toshkent shahrida (qurilish ob'yektlari, katta mijozlar) orqali erishamiz.</div>
+<div class="risk-desc">Prognoz aylanmasi 276 mlrd so'm — 2023-yildagi 193.2 mlrd so'mdan 42.8% yuqori. 2023-yilda korxona 1 mln $ aylanma mablag'i bilan 193.2 mlrd so'mlik natijaga erishgan bo'lsa, loyihaga qo'shimcha 2 mln $ investitsiya kiritish orqali aylanma kapitalni 3 mln $ ga yetkazib, ushbu 276 mlrd so'mlik aylanma va 8.94 mlrd so'mlik sof foyda ko'rsatkichiga to'liq erisha olamiz. Bu ko'rsatkichga tovar zaxirasini 2-3 baravarga oshirish (1.5 mln $), qo'shimcha transportlar xarid qilish (100 ming $), omborlarni kengaytirish va Toshkent shahrida yirik B2B qurilish ob'yektlarida faollashish hisobiga erishiladi.</div>
 </div>
 <div class="risk-card">
 <div class="risk-title">Investitsiya shartlari kelishilgan holda</div>
@@ -1429,7 +1655,7 @@ body {
 </div>
 
 <!-- ======================= SLIDE 27: THANK YOU ======================= -->
-<div class="slide dark" data-slide="26">
+<div class="slide dark" data-slide="29">
 <img src="assets/hero-bg.jpg" class="bg-image" style="opacity:0.15" alt="">
 <div class="bg-overlay"></div>
 <div class="slide-inner" style="text-align:center">
@@ -1573,6 +1799,7 @@ animateSlideIn(slides[0]);
 // Entrance animation for hero
 gsap.from('#hero-label', {y:30, opacity:0, duration:0.8, delay:0.3, ease:'power2.out'});
 gsap.from('#hero-title', {y:50, opacity:0, duration:1, delay:0.5, ease:'power2.out'});
+gsap.from('.hero-product-card', {y:30, opacity:0, duration:0.8, delay:0.7, stagger:0.1, ease:'power2.out'});
 </script>
 </body>
 </html>
