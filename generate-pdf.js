@@ -1575,12 +1575,27 @@ const htmlFilePath = path.resolve(__dirname, 'presentation-pdf.html');
 fs.writeFileSync(htmlFilePath, htmlContent, 'utf8');
 console.log('Saved presentation-pdf.html');
 
-// Render PDF via Chrome Headless
-const chromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+// Render PDF via Chrome or Edge Headless
+function findBrowserPath() {
+  const candidates = [
+    process.env.CHROME_BIN,
+    'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+    'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
+    'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe'
+  ].filter(Boolean);
+
+  for (const p of candidates) {
+    if (fs.existsSync(p)) return p;
+  }
+  return 'chrome';
+}
+
+const browserPath = findBrowserPath();
 const pdfOutputPath = path.resolve(__dirname, 'AKFA_Investor_Prezentatsiyasi.pdf');
 
-console.log('Rendering PDF via Chrome headless...');
-const chromeArgs = [
+console.log('Rendering PDF via headless browser (' + browserPath + ')...');
+const browserArgs = [
   '--headless',
   '--disable-gpu',
   '--no-pdf-header-footer',
@@ -1589,12 +1604,13 @@ const chromeArgs = [
   htmlFilePath
 ];
 
-const res = spawnSync(chromePath, chromeArgs, { encoding: 'utf-8' });
+const res = spawnSync(browserPath, browserArgs, { encoding: 'utf-8' });
 if (res.status === 0 && fs.existsSync(pdfOutputPath)) {
   const stats = fs.statSync(pdfOutputPath);
-  console.log('SUCCESS! PDF regenerated: ' + pdfOutputPath);
+  console.log('SUCCESS! PDF generated: ' + pdfOutputPath);
   console.log('File size: ' + (stats.size / 1024 / 1024).toFixed(2) + ' MB (' + stats.size + ' bytes)');
 } else {
   console.error('Failed to generate PDF. Exit code:', res.status);
-  console.error('Stderr:', res.stderr);
+  if (res.stderr) console.error('Stderr:', res.stderr);
 }
+

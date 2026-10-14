@@ -4,7 +4,9 @@
   "description": "AKFA Dilerlik Biznesi — Investor Prezentatsiyasi",
   "main": "index.html",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "generate:pdf": "node generate-pdf.js",
+    "generate:pptx": "node generate-full-presentation.js"
   },
   "dependencies": {
     "pptxgenjs": "^4.0.1",

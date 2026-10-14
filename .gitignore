@@ -10,9 +10,16 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
 
 # Vercel
 .vercel
 
-# Office temporary files
+# Temporary and render files
+temp-*.html
 ~$*
+
