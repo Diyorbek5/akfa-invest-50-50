@@ -6,7 +6,7 @@
 | Fayl | Tavsif | Manba |
 |------|--------|-------|
 | `assets/hero-bg.jpg` | Alyuminiy profillar — bosh sahifa fon rasmi | AI tomonidan generatsiya qilingan (illustrativ) |
-| `assets/warehouse.jpg` | Sanoat ombori va logistika markazi | AI tomonidan generatsiya qilingan (illustrativ) |
+| `assets/warehouse.jpg` | Sanoat ombori va logistika markazi (AKFA brendli) | AI tomonidan generatsiya qilingan (illustrativ) |
 | `assets/construction.jpg` | O'zbekiston shahri qurilish manzarasi | AI tomonidan generatsiya qilingan (illustrativ) |
 
 ### Muhim eslatmalar
