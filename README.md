@@ -1,12 +1,12 @@
-# AKFA Dilerlik Biznesi — Investor Prezentatsiyasi
+# AKFA Dilerlik Biznesi — Investor Prezentatsiyasi (akfa-invest-50-50)
 
 AKFA dilerlik korxonasi investor taqdimoti (interaktiv veb-prezentatsiya va ma'lumotlar to'plami).
 
 ## Vercel orqali deploy qilish
 Loyiha Vercel platformasi uchun to'liq moslashtirilgan:
-1. Loyihani GitHub-ga ulang (`https://github.com/Diyorbek5/akfa-invest.git`).
+1. Loyihani GitHub-ga ulang (`https://github.com/Diyorbek5/akfa-invest-50-50.git`).
 2. [Vercel](https://vercel.com) saytiga kiring va **"Add New Project"** tugmasini bosing.
-3. `akfa-invest` omborini (repository) tanlab, **"Deploy"** tugmasini bosing.
+3. `akfa-invest-50-50` omborini (repository) tanlab, **"Deploy"** tugmasini bosing.
 4. Hech qanday qo'shimcha sozlash (Build command / Output directory) talab etilmaydi — bosh sahifa (`index.html`) avtomatik ochiladi.
 
 ## Mahalliy ishga tushirish (Local)
@@ -55,4 +55,7 @@ akfa-invest/
 ├── image-sources.md                       — Foydalanilgan tasvirlar manbalari
 └── package.json                           — Loyiha konfiguratsiyasi va bog'liqliklar
 ```
+
+# akfa-invest-50-50
+
 
