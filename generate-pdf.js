@@ -679,9 +679,9 @@ html, body {
           <div style="background:var(--dark-card);border-radius:8px;padding:14px 18px;border:1px solid rgba(16,185,129,0.3);">
             <div style="font-size:11px;font-weight:700;color:var(--neutral);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Prognoz Sof Foyda</div>
             <div style="font-family:var(--font-mono);font-size:36px;font-weight:900;color:var(--green);line-height:1.05;">
-              9.04 <span style="font-size:18px;color:#A7F3D0;">mlrd</span>
+              4.52 <span style="font-size:18px;color:#A7F3D0;">mlrd</span>
             </div>
-            <div style="font-size:11px;color:var(--green);font-weight:700;margin-top:2px;">▲ +249.0%</div>
+            <div style="font-size:11px;color:var(--green);font-weight:700;margin-top:2px;">▲ +74.4%</div>
           </div>
         </div>
       </div>
@@ -706,7 +706,7 @@ html, body {
       <div style="height:32px;width:1px;background:var(--dark-border);"></div>
       <div style="text-align:center;">
         <div style="font-size:11px;color:var(--neutral);font-weight:700;text-transform:uppercase;">Prognoz Yillik Sof Foyda</div>
-        <div style="font-family:var(--font-mono);font-size:22px;font-weight:800;color:var(--green);">9.04 mlrd so'm</div>
+        <div style="font-family:var(--font-mono);font-size:22px;font-weight:800;color:var(--green);">4.52 mlrd so'm</div>
       </div>
     </div>
 
@@ -1125,7 +1125,7 @@ html, body {
 
 <!-- ===================================================================
      PAGE 8 (Slide 22): INVESTOR PROGNOZI — UMUMIY KO'RINISH
-     (Ortiqcha oylik izohlarsiz, to'liq to'ldirilgan va aniq 9.04 mlrd)
+     (Ortiqcha oylik izohlarsiz, to'liq to'ldirilgan va aniq 4.52 mlrd)
      =================================================================== -->
 <section class="slide-page" id="page-8">
   <div class="bg-pattern"></div>
@@ -1169,28 +1169,28 @@ html, body {
         </div>
       </div>
 
-      <!-- Sof Foyda Card (9.04 mlrd) -->
+      <!-- Sof Foyda Card (4.52 mlrd) -->
       <div class="card" style="padding:22px 26px;border-top:4px solid var(--green);background:linear-gradient(180deg,rgba(24,34,28,0.95),var(--dark-panel));display:flex;flex-direction:column;justify-content:space-between;">
         <div>
           <div style="font-size:12.5px;font-weight:700;color:#A7F3D0;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">
             PROGNOZ YILLIK SOF FOYDA
           </div>
           <div style="font-family:var(--font-mono);font-size:52px;font-weight:900;color:var(--green);line-height:1.05;margin-bottom:12px;">
-            9.04 <span style="font-size:22px;color:#A7F3D0;">mlrd so'm</span>
+            4.52 <span style="font-size:22px;color:#A7F3D0;">mlrd so'm</span>
           </div>
 
           <div style="display:flex;gap:10px;margin-bottom:14px;">
             <div style="background:rgba(16,185,129,0.2);border-radius:6px;padding:8px 14px;border:1px solid rgba(16,185,129,0.5);font-size:12.5px;font-weight:700;color:#6EE7B7;">
-              ▲ +249.0% (3.5 barobar o'sish)
+              ▲ +74.4% (2025-yilga nisbatan)
             </div>
-            <div style="background:rgba(16,185,129,0.12);border-radius:6px;padding:8px 14px;border:1px solid rgba(16,185,129,0.3);font-size:12.5px;font-weight:700;color:var(--white);">
-              ▲ +52.7% (2023-yilga nisbatan)
+            <div style="background:rgba(238,53,38,0.18);border-radius:6px;padding:8px 14px;border:1px solid rgba(238,53,38,0.4);font-size:12.5px;font-weight:700;color:#FFA59C;">
+              ▼ -23.6% (2023-yilga nisbatan)
             </div>
           </div>
         </div>
 
         <div style="background:var(--dark-card);border-radius:8px;padding:14px 18px;border:1px solid rgba(16,185,129,0.25);display:flex;flex-direction:column;gap:8px;">
-          <div style="font-size:12.5px;color:var(--silver);"><strong style="color:var(--white);">Foyda Marjasi:</strong> 3.28% o'rtacha yillik rentabellik</div>
+          <div style="font-size:12.5px;color:var(--silver);"><strong style="color:var(--white);">Foyda Marjasi:</strong> 1.64% o'rtacha yillik rentabellik</div>
           <div style="font-size:12.5px;color:var(--silver);"><strong style="color:var(--white);">Kapital Xavfsizligi:</strong> Valyutaga ($) bog'langan xaridorgir tovarlar</div>
         </div>
       </div>
@@ -1200,7 +1200,7 @@ html, body {
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;">
       <div class="card" style="padding:14px 18px;text-align:center;">
         <div style="font-size:11px;font-weight:700;color:var(--neutral);text-transform:uppercase;">Foyda Marjasi</div>
-        <div style="font-family:var(--font-mono);font-size:22px;font-weight:800;color:var(--white);margin-top:2px;">3.28%</div>
+        <div style="font-family:var(--font-mono);font-size:22px;font-weight:800;color:var(--white);margin-top:2px;">1.64%</div>
       </div>
       <div class="card" style="padding:14px 18px;text-align:center;">
         <div style="font-size:11px;font-weight:700;color:var(--neutral);text-transform:uppercase;">Mahsulot Qiymati</div>
@@ -1227,7 +1227,7 @@ html, body {
 
 <!-- ===================================================================
      PAGE 9 (Slide 23): INVESTOR PROGNOZI — 12 OYLIK JADVAL
-     (Ortiqcha izohlarsiz, toza 5 ta ustun, Iyul: 1,040 mln, Jami: 9.04 mlrd)
+     (Ortiqcha izohlarsiz, toza 5 ta ustun, Iyul: 520 mln, Jami: 4.52 mlrd)
      =================================================================== -->
 <section class="slide-page" id="page-9">
   <div class="bg-pattern"></div>
@@ -1259,80 +1259,80 @@ html, body {
             <td>1</td>
             <td>Yanvar</td>
             <td class="num">16,000,000,000</td>
-            <td class="num" style="color:var(--green);">420,000,000</td>
+            <td class="num" style="color:var(--green);">210,000,000</td>
           </tr>
           <tr>
             <td>2</td>
             <td>Fevral</td>
             <td class="num">17,000,000,000</td>
-            <td class="num" style="color:var(--green);">460,000,000</td>
+            <td class="num" style="color:var(--green);">230,000,000</td>
           </tr>
           <tr>
             <td>3</td>
             <td>Mart</td>
             <td class="num">18,000,000,000</td>
-            <td class="num" style="color:var(--green);">500,000,000</td>
+            <td class="num" style="color:var(--green);">250,000,000</td>
           </tr>
           <tr>
             <td>4</td>
             <td>Aprel</td>
             <td class="num">21,000,000,000</td>
-            <td class="num" style="color:var(--green);">620,000,000</td>
+            <td class="num" style="color:var(--green);">310,000,000</td>
           </tr>
           <tr>
             <td>5</td>
             <td>May</td>
             <td class="num">24,000,000,000</td>
-            <td class="num" style="color:var(--green);">820,000,000</td>
+            <td class="num" style="color:var(--green);">410,000,000</td>
           </tr>
           <tr>
             <td>6</td>
             <td>Iyun</td>
             <td class="num">26,000,000,000</td>
-            <td class="num" style="color:var(--green);">900,000,000</td>
+            <td class="num" style="color:var(--green);">450,000,000</td>
           </tr>
           <tr>
             <td>7</td>
             <td>Iyul</td>
             <td class="num">27,000,000,000</td>
-            <td class="num" style="color:var(--green);">1,040,000,000</td>
+            <td class="num" style="color:var(--green);">520,000,000</td>
           </tr>
           <tr>
             <td>8</td>
             <td>Avgust</td>
             <td class="num">30,000,000,000</td>
-            <td class="num" style="color:var(--green);">1,060,000,000</td>
+            <td class="num" style="color:var(--green);">530,000,000</td>
           </tr>
           <tr>
             <td>9</td>
             <td>Sentabr</td>
             <td class="num">30,000,000,000</td>
-            <td class="num" style="color:var(--green);">1,060,000,000</td>
+            <td class="num" style="color:var(--green);">530,000,000</td>
           </tr>
           <tr>
             <td>10</td>
             <td>Oktabr</td>
             <td class="num">26,000,000,000</td>
-            <td class="num" style="color:var(--green);">900,000,000</td>
+            <td class="num" style="color:var(--green);">450,000,000</td>
           </tr>
           <tr>
             <td>11</td>
             <td>Noyabr</td>
             <td class="num">23,000,000,000</td>
-            <td class="num" style="color:var(--green);">780,000,000</td>
+            <td class="num" style="color:var(--green);">390,000,000</td>
           </tr>
           <tr>
             <td>12</td>
             <td>Dekabr</td>
             <td class="num">18,000,000,000</td>
-            <td class="num" style="color:var(--green);">480,000,000</td>
+            <td class="num" style="color:var(--green);">240,000,000</td>
           </tr>
-          <!-- Total Row: Aniq 9,040,000,000 so'm (9.04 mlrd) -->
+          <!-- Total Row: Aniq 4,520,000,000 so'm (4.52 mlrd) -->
           <tr class="total-row">
             <td></td>
             <td><strong>JAMI</strong></td>
             <td class="num" style="font-size:15px;"><strong>276,000,000,000</strong></td>
-            <td class="num" style="color:#6EE7B7;font-size:16px;"><strong>9,040,000,000</strong></td>
+            <td class="num" style="color:#6EE7B7;font-size:16px;"><strong>4,520,000,000</strong></td>
           </tr>
         </tbody>
       </table>
@@ -1393,31 +1393,31 @@ html, body {
         </div>
       </div>
 
-      <!-- Chart 2: Foyda (Iyul 1040 mln) -->
+      <!-- Chart 2: Foyda (Iyul 520 mln) -->
       <div class="chart-box">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
           <div style="font-size:13px;font-weight:800;text-transform:uppercase;color:var(--silver);letter-spacing:1px;">
             Sof Foyda (mln so'm)
           </div>
           <div style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--green);">
-            Jami: 9.04 mlrd UZS
+            Jami: 4.52 mlrd UZS
           </div>
         </div>
 
         <div class="bars-wrap">
-          <div class="bar-col"><div class="bar-rect" style="height:39.6%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">420</span></div><span class="bar-month-lbl">Yan</span></div>
-          <div class="bar-col"><div class="bar-rect" style="height:43.4%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">460</span></div><span class="bar-month-lbl">Fev</span></div>
-          <div class="bar-col"><div class="bar-rect" style="height:47.2%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">500</span></div><span class="bar-month-lbl">Mar</span></div>
-          <div class="bar-col"><div class="bar-rect" style="height:58.5%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">620</span></div><span class="bar-month-lbl">Apr</span></div>
-          <div class="bar-col"><div class="bar-rect" style="height:77.4%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">820</span></div><span class="bar-month-lbl">May</span></div>
-          <div class="bar-col"><div class="bar-rect" style="height:84.9%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">900</span></div><span class="bar-month-lbl">Iyun</span></div>
-          <!-- Iyul: 1040 mln -->
-          <div class="bar-col"><div class="bar-rect" style="height:98.1%;background:linear-gradient(180deg,#34D399,#059669);"><span class="bar-tag" style="color:#6EE7B7;font-weight:900;">1040</span></div><span class="bar-month-lbl" style="color:var(--green);font-weight:800;">Iyul</span></div>
-          <div class="bar-col"><div class="bar-rect" style="height:100.0%;background:linear-gradient(180deg,#34D399,#059669);"><span class="bar-tag" style="color:#6EE7B7;font-weight:900;">1060</span></div><span class="bar-month-lbl">Avg</span></div>
-          <div class="bar-col"><div class="bar-rect" style="height:100.0%;background:linear-gradient(180deg,#34D399,#059669);"><span class="bar-tag" style="color:#6EE7B7;font-weight:900;">1060</span></div><span class="bar-month-lbl">Sen</span></div>
-          <div class="bar-col"><div class="bar-rect" style="height:84.9%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">900</span></div><span class="bar-month-lbl">Okt</span></div>
-          <div class="bar-col"><div class="bar-rect" style="height:73.6%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">780</span></div><span class="bar-month-lbl">Noy</span></div>
-          <div class="bar-col"><div class="bar-rect" style="height:45.3%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">480</span></div><span class="bar-month-lbl">Dek</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:39.6%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">210</span></div><span class="bar-month-lbl">Yan</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:43.4%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">230</span></div><span class="bar-month-lbl">Fev</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:47.2%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">250</span></div><span class="bar-month-lbl">Mar</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:58.5%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">310</span></div><span class="bar-month-lbl">Apr</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:77.4%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">410</span></div><span class="bar-month-lbl">May</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:84.9%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">450</span></div><span class="bar-month-lbl">Iyun</span></div>
+          <!-- Iyul: 520 mln -->
+          <div class="bar-col"><div class="bar-rect" style="height:98.1%;background:linear-gradient(180deg,#34D399,#059669);"><span class="bar-tag" style="color:#6EE7B7;font-weight:900;">520</span></div><span class="bar-month-lbl" style="color:var(--green);font-weight:800;">Iyul</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:100.0%;background:linear-gradient(180deg,#34D399,#059669);"><span class="bar-tag" style="color:#6EE7B7;font-weight:900;">530</span></div><span class="bar-month-lbl">Avg</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:100.0%;background:linear-gradient(180deg,#34D399,#059669);"><span class="bar-tag" style="color:#6EE7B7;font-weight:900;">530</span></div><span class="bar-month-lbl">Sen</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:84.9%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">450</span></div><span class="bar-month-lbl">Okt</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:73.6%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">390</span></div><span class="bar-month-lbl">Noy</span></div>
+          <div class="bar-col"><div class="bar-rect" style="height:45.3%;background:linear-gradient(180deg,#10B981,#065F46);"><span class="bar-tag">240</span></div><span class="bar-month-lbl">Dek</span></div>
         </div>
       </div>
     </div>
@@ -1431,17 +1431,17 @@ html, body {
       <div style="height:32px;width:1px;background:var(--dark-border);"></div>
       <div style="text-align:center;">
         <span style="font-size:11px;color:var(--neutral);font-weight:700;text-transform:uppercase;">JAMI SOF FOYDA</span>
-        <div style="font-family:var(--font-mono);font-size:22px;font-weight:800;color:var(--green);">9.04 mlrd so'm</div>
+        <div style="font-family:var(--font-mono);font-size:22px;font-weight:800;color:var(--green);">4.52 mlrd so'm</div>
       </div>
       <div style="height:32px;width:1px;background:var(--dark-border);"></div>
       <div style="text-align:center;">
         <span style="font-size:11px;color:var(--neutral);font-weight:700;text-transform:uppercase;">FOYDA MARJASI</span>
-        <div style="font-family:var(--font-mono);font-size:22px;font-weight:800;color:#6EE7B7;">3.28%</div>
+        <div style="font-family:var(--font-mono);font-size:22px;font-weight:800;color:#6EE7B7;">1.64%</div>
       </div>
       <div style="height:32px;width:1px;background:var(--dark-border);"></div>
       <div style="text-align:center;">
         <span style="font-size:11px;color:var(--neutral);font-weight:700;text-transform:uppercase;">ENG YUQORI OYLAR</span>
-        <div style="font-family:var(--font-mono);font-size:18px;font-weight:700;color:var(--white);">Avgust & Sentabr (1.06 mlrd), Iyul (1.04 mlrd)</div>
+        <div style="font-family:var(--font-mono);font-size:18px;font-weight:700;color:var(--white);">Avgust & Sentabr (530 mln), Iyul (520 mln)</div>
       </div>
     </div>
 

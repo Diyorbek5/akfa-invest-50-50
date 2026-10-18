@@ -52,8 +52,8 @@ body {
 
 #slide-counter {
   position: fixed;
-  top: 24px;
-  right: 32px;
+  top: 20px;
+  right: 175px;
   font-family: var(--font-mono);
   font-size: 13px;
   font-weight: 600;
@@ -65,6 +65,27 @@ body {
   border-radius: 20px;
   border: 1px solid var(--dark-border);
   letter-spacing: 1px;
+}
+
+#fixed-akfa-logo {
+  position: fixed;
+  top: 18px;
+  right: 32px;
+  z-index: 10001;
+  background: #FFFFFF;
+  padding: 5px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+}
+
+#fixed-akfa-logo img {
+  height: 25px;
+  width: auto;
+  display: block;
 }
 
 #nav-dots {
@@ -719,7 +740,10 @@ body {
 </head>
 <body>
 <div id="progress-bar" style="width:0%"></div>
-<div id="slide-counter">01 / 30</div>
+<div id="slide-counter">01 / 28</div>
+<div id="fixed-akfa-logo">
+  <img src="assets/akfa-logo.png" alt="AKFA">
+</div>
 <div id="nav-dots"></div>
 <div class="scroll-hint">
 <span>Navigatsiya:</span>
@@ -854,9 +878,9 @@ body {
 <div class="kpi-change negative">▼ -43.9%</div>
 </div>
 <div class="kpi-card">
-<div class="kpi-value" data-count="9.04" data-suffix=" mlrd" data-decimals="2">0</div>
+<div class="kpi-value" data-count="4.52" data-suffix=" mlrd" data-decimals="2">0</div>
 <div class="kpi-label">Prognoz Foyda (so'm)</div>
-<div class="kpi-change positive">▲ +249.0%</div>
+<div class="kpi-change positive">▲ +74.4%</div>
 </div>
 </div>
 <p class="body-text" style="margin-top:16px;text-align:center;font-size:12px">Barcha moliyaviy ko'rsatkichlar O'zbekiston so'mida. Manbalar: korxona ichki hisobotlari.</p>
@@ -1441,15 +1465,15 @@ body {
 <div class="kpi-label">Prognoz Aylanma (so'm)</div>
 </div>
 <div class="kpi-card">
-<div class="kpi-value" data-count="9.04" data-suffix=" mlrd" data-decimals="2">0</div>
+<div class="kpi-value" data-count="4.52" data-suffix=" mlrd" data-decimals="2">0</div>
 <div class="kpi-label">Prognoz Foyda (so'm)</div>
 </div>
 </div>
 <div class="scenario-note" style="margin-top:20px">
-<strong>Prognoz asoslari:</strong> Prognoz yillik aylanmasi 276 mlrd so'm, yillik prognoz foydasi 9.04 mlrd so'm. O'rtacha oylik prognoz daromad: <strong>753.3 mln so'm</strong>. Aylanmada turadigan o'rtacha kapital: <strong>3,000,000 $</strong>.
+<strong>Prognoz asoslari:</strong> Prognoz yillik aylanmasi 276 mlrd so'm, yillik prognoz foydasi 4.52 mlrd so'm. O'rtacha oylik prognoz daromad: <strong>376.7 mln so'm</strong>. Aylanmada turadigan o'rtacha kapital: <strong>3,000,000 $</strong>.
 </div>
 <p class="body-text" style="margin-top:16px"><strong style="color:var(--white)">Prognoz va tarixiy natijalar taqqoslanishi:</strong></p>
-<p class="body-text">Prognoz aylanmasi (276 mlrd) 2023-yildan <strong>+42.8%</strong> yuqori, 2025-yildan <strong>+107.3%</strong> yuqori. Prognoz foydasi (9.04 mlrd) 2023-yildan <strong>+52.7%</strong> yuqori, 2025-yildan <strong>+248.8%</strong> yuqori.</p>
+<p class="body-text">Prognoz aylanmasi (276 mlrd) 2023-yildan <strong>+42.8%</strong> yuqori, 2025-yildan <strong>+107.3%</strong> yuqori. Prognoz foydasi (4.52 mlrd) 2023-yildan <strong>-23.6%</strong>, 2025-yildan <strong>+74.4%</strong> yuqori.</p>
 </div>
 </div>
 
@@ -1461,22 +1485,22 @@ body {
 <table class="fin-table">
 <thead><tr><th>№</th><th>Oy</th><th class="num">Aylanma (so'm)</th><th class="num">Foyda (so'm)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>Yanvar</td><td class="num">16,000,000,000</td><td class="num">420,000,000</td></tr>
-<tr><td>2</td><td>Fevral</td><td class="num">17,000,000,000</td><td class="num">460,000,000</td></tr>
-<tr><td>3</td><td>Mart</td><td class="num">18,000,000,000</td><td class="num">500,000,000</td></tr>
-<tr><td>4</td><td>Aprel</td><td class="num">21,000,000,000</td><td class="num">620,000,000</td></tr>
-<tr><td>5</td><td>May</td><td class="num">24,000,000,000</td><td class="num">820,000,000</td></tr>
-<tr><td>6</td><td>Iyun</td><td class="num">26,000,000,000</td><td class="num">900,000,000</td></tr>
-<tr><td>7</td><td>Iyul</td><td class="num">27,000,000,000</td><td class="num">1,040,000,000</td></tr>
-<tr><td>8</td><td>Avgust</td><td class="num">30,000,000,000</td><td class="num">1,060,000,000</td></tr>
-<tr><td>9</td><td>Sentabr</td><td class="num">30,000,000,000</td><td class="num">1,060,000,000</td></tr>
-<tr><td>10</td><td>Oktabr</td><td class="num">26,000,000,000</td><td class="num">900,000,000</td></tr>
-<tr><td>11</td><td>Noyabr</td><td class="num">23,000,000,000</td><td class="num">780,000,000</td></tr>
-<tr><td>12</td><td>Dekabr</td><td class="num">18,000,000,000</td><td class="num">480,000,000</td></tr>
-<tr class="total-row"><td></td><td><strong>JAMI</strong></td><td class="num"><strong>276,000,000,000</strong></td><td class="num"><strong>9,040,000,000</strong></td></tr>
+<tr><td>1</td><td>Yanvar</td><td class="num">16,000,000,000</td><td class="num">210,000,000</td></tr>
+<tr><td>2</td><td>Fevral</td><td class="num">17,000,000,000</td><td class="num">230,000,000</td></tr>
+<tr><td>3</td><td>Mart</td><td class="num">18,000,000,000</td><td class="num">250,000,000</td></tr>
+<tr><td>4</td><td>Aprel</td><td class="num">21,000,000,000</td><td class="num">310,000,000</td></tr>
+<tr><td>5</td><td>May</td><td class="num">24,000,000,000</td><td class="num">410,000,000</td></tr>
+<tr><td>6</td><td>Iyun</td><td class="num">26,000,000,000</td><td class="num">450,000,000</td></tr>
+<tr><td>7</td><td>Iyul</td><td class="num">27,000,000,000</td><td class="num">520,000,000</td></tr>
+<tr><td>8</td><td>Avgust</td><td class="num">30,000,000,000</td><td class="num">530,000,000</td></tr>
+<tr><td>9</td><td>Sentabr</td><td class="num">30,000,000,000</td><td class="num">530,000,000</td></tr>
+<tr><td>10</td><td>Oktabr</td><td class="num">26,000,000,000</td><td class="num">450,000,000</td></tr>
+<tr><td>11</td><td>Noyabr</td><td class="num">23,000,000,000</td><td class="num">390,000,000</td></tr>
+<tr><td>12</td><td>Dekabr</td><td class="num">18,000,000,000</td><td class="num">240,000,000</td></tr>
+<tr class="total-row"><td></td><td><strong>JAMI</strong></td><td class="num"><strong>276,000,000,000</strong></td><td class="num"><strong>4,520,000,000</strong></td></tr>
 </tbody>
 </table>
-<p class="body-text" style="margin-top:12px;font-size:13px"><strong>O'rtacha oylik daromad:</strong> <span class="highlight-num">753,333,333</span> so'm. Manba: ichki hisob-kitoblar va prognoz modeli.</p>
+<p class="body-text" style="margin-top:12px;font-size:13px"><strong>O'rtacha oylik daromad:</strong> <span class="highlight-num">376,666,667</span> so'm. Manba: ichki hisob-kitoblar va prognoz modeli.</p>
 </div>
 </div>
 
@@ -1507,18 +1531,18 @@ body {
 <div class="chart-container">
 <div class="chart-title">Prognoz foyda, mln so'm</div>
 <div class="bar-chart" style="height:160px">
-<div class="bar-group"><div class="bar" style="height:39.6%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">420</div></div><div class="bar-label">Y</div></div>
-<div class="bar-group"><div class="bar" style="height:43.4%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">460</div></div><div class="bar-label">F</div></div>
-<div class="bar-group"><div class="bar" style="height:47.2%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">500</div></div><div class="bar-label">M</div></div>
-<div class="bar-group"><div class="bar" style="height:58.5%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">620</div></div><div class="bar-label">A</div></div>
-<div class="bar-group"><div class="bar" style="height:77.4%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">820</div></div><div class="bar-label">M</div></div>
-<div class="bar-group"><div class="bar" style="height:84.9%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">900</div></div><div class="bar-label">I</div></div>
-<div class="bar-group"><div class="bar" style="height:98.1%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">1040</div></div><div class="bar-label">I</div></div>
-<div class="bar-group"><div class="bar" style="height:100%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">1060</div></div><div class="bar-label">A</div></div>
-<div class="bar-group"><div class="bar" style="height:100%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">1060</div></div><div class="bar-label">S</div></div>
-<div class="bar-group"><div class="bar" style="height:84.9%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">900</div></div><div class="bar-label">O</div></div>
-<div class="bar-group"><div class="bar" style="height:73.6%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">780</div></div><div class="bar-label">N</div></div>
-<div class="bar-group"><div class="bar" style="height:45.3%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">480</div></div><div class="bar-label">D</div></div>
+<div class="bar-group"><div class="bar" style="height:39.6%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">210</div></div><div class="bar-label">Y</div></div>
+<div class="bar-group"><div class="bar" style="height:43.4%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">230</div></div><div class="bar-label">F</div></div>
+<div class="bar-group"><div class="bar" style="height:47.2%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">250</div></div><div class="bar-label">M</div></div>
+<div class="bar-group"><div class="bar" style="height:58.5%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">310</div></div><div class="bar-label">A</div></div>
+<div class="bar-group"><div class="bar" style="height:77.4%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">410</div></div><div class="bar-label">M</div></div>
+<div class="bar-group"><div class="bar" style="height:84.9%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">450</div></div><div class="bar-label">I</div></div>
+<div class="bar-group"><div class="bar" style="height:98.1%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">520</div></div><div class="bar-label">I</div></div>
+<div class="bar-group"><div class="bar" style="height:100%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">530</div></div><div class="bar-label">A</div></div>
+<div class="bar-group"><div class="bar" style="height:100%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">530</div></div><div class="bar-label">S</div></div>
+<div class="bar-group"><div class="bar" style="height:84.9%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">450</div></div><div class="bar-label">O</div></div>
+<div class="bar-group"><div class="bar" style="height:73.6%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">390</div></div><div class="bar-label">N</div></div>
+<div class="bar-group"><div class="bar" style="height:45.3%;background:linear-gradient(180deg,#22C55E,rgba(34,197,94,0.5))"><div class="bar-value" style="opacity:1">240</div></div><div class="bar-label">D</div></div>
 </div>
 </div>
 </div>
@@ -1536,12 +1560,12 @@ body {
 <thead><tr><th>Ko'rsatkich</th><th class="num">2023 (fakt)</th><th class="num">2024 (fakt)</th><th class="num">2025 (fakt)</th><th class="num">Prognoz</th></tr></thead>
 <tbody>
 <tr><td>Aylanma</td><td class="num">193.24 mlrd</td><td class="num">172.20 mlrd</td><td class="num">133.10 mlrd</td><td class="num" style="font-weight:700;color:var(--akfa-red)">276.00 mlrd</td></tr>
-<tr><td>Foyda</td><td class="num">5.92 mlrd</td><td class="num">4.63 mlrd</td><td class="num">2.59 mlrd</td><td class="num" style="font-weight:700;color:var(--akfa-red)">9.04 mlrd</td></tr>
-<tr><td>O'rtacha oylik foyda</td><td class="num">493.5 mln</td><td class="num">385.6 mln</td><td class="num">216.0 mln</td><td class="num" style="font-weight:700;color:var(--akfa-red)">753.3 mln</td></tr>
+<tr><td>Foyda</td><td class="num">5.92 mlrd</td><td class="num">4.63 mlrd</td><td class="num">2.59 mlrd</td><td class="num" style="font-weight:700;color:var(--akfa-red)">4.52 mlrd</td></tr>
+<tr><td>O'rtacha oylik foyda</td><td class="num">493.5 mln</td><td class="num">385.6 mln</td><td class="num">216.0 mln</td><td class="num" style="font-weight:700;color:var(--akfa-red)">376.7 mln</td></tr>
 </tbody>
 </table>
 </div>
-<p class="body-text" style="margin-top:20px"><strong style="color:var(--light-text)">Rivojlanish ko'rsatkichlari:</strong> Yillik prognoz <strong>276 mlrd so'm</strong> aylanma va <strong>9.04 mlrd so'm</strong> (oyiga 753.3 mln) foydani tashkil etadi.</p>
+<p class="body-text" style="margin-top:20px"><strong style="color:var(--light-text)">Rivojlanish ko'rsatkichlari:</strong> Yillik prognoz <strong>276 mlrd so'm</strong> aylanma va <strong>4.52 mlrd so'm</strong> (oyiga 376.7 mln) foydani tashkil etadi.</p>
 </div>
 </div>
 
@@ -1557,7 +1581,7 @@ body {
 </div>
 <div class="risk-card">
 <div class="risk-title">Prognozning asoslanganligi</div>
-<div class="risk-desc">Prognoz aylanmasi 276 mlrd so'm — 2023-yildagi 193.2 mlrd so'mdan 42.8% yuqori. 2023-yilda korxona 1 mln $ aylanma mablag'i bilan 193.2 mlrd so'mlik natijaga erishgan bo'lsa, loyihaga qo'shimcha 2 mln $ investitsiya kiritish orqali aylanma kapitalni 3 mln $ ga yetkazib, ushbu 276 mlrd so'mlik aylanma va 9.04 mlrd so'mlik sof foyda ko'rsatkichiga to'liq erisha olamiz. Bu ko'rsatkichga tovar zaxirasini 2-3 baravarga oshirish, qo'shimcha transportlar xarid qilish, omborlarni kengaytirish va Toshkent shahrida yirik B2B qurilish ob'yektlarida faollashish hisobiga erishiladi.</div>
+<div class="risk-desc">Prognoz aylanmasi 276 mlrd so'm — 2023-yildagi 193.2 mlrd so'mdan 42.8% yuqori. 2023-yilda korxona 1 mln $ aylanma mablag'i bilan 193.2 mlrd so'mlik natijaga erishgan bo'lsa, loyihaga qo'shimcha 2 mln $ investitsiya kiritish orqali aylanma kapitalni 3 mln $ ga yetkazib, ushbu 276 mlrd so'mlik aylanma va 4.52 mlrd so'mlik sof foyda ko'rsatkichiga to'liq erisha olamiz. Bu ko'rsatkichga tovar zaxirasini 2-3 baravarga oshirish, qo'shimcha transportlar xarid qilish, omborlarni kengaytirish va Toshkent shahrida yirik B2B qurilish ob'yektlarida faollashish hisobiga erishiladi.</div>
 </div>
 <div class="risk-card">
 <div class="risk-title">Investitsiya shartlari kelishilgan holda</div>
@@ -1567,8 +1591,53 @@ body {
 </div>
 </div>
 
-<!-- ======================= SLIDE 27: THANK YOU ======================= -->
+<!-- ======================= SLIDE 27: STRATEGIK HAMKORLIK ======================= -->
 <div class="slide dark" data-slide="26">
+<div class="bg-pattern"></div>
+<img src="assets/hero-bg.jpg" class="bg-image" style="opacity:0.18" alt="">
+<div class="bg-overlay" style="background:linear-gradient(135deg,rgba(20,21,23,0.92) 0%,rgba(28,30,32,0.88) 60%,rgba(20,21,23,0.96) 100%)"></div>
+<div class="slide-inner" style="text-align:center;max-width:980px;margin:0 auto;display:flex;flex-direction:column;justify-content:center;height:100%">
+  <div style="display:flex;justify-content:flex-start;width:100%;margin-bottom:12px">
+    <div class="section-label" style="margin:0;background:rgba(238,53,38,0.14);border:1px solid rgba(238,53,38,0.5);color:var(--akfa-red);padding:6px 18px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:2px">STRATEGIK HAMKORLIK</div>
+  </div>
+  
+  <h1 style="font-size:48px;font-weight:900;line-height:1.15;letter-spacing:-1px;margin-bottom:8px">
+    Yangi Hamkorligimiz <span class="red-accent">Barakali Bo'lsin!</span>
+  </h1>
+  <p style="font-size:16px;color:var(--silver);margin-bottom:20px;letter-spacing:0.3px">
+    AKFA Dilerlik Biznesi & Investor — Ishonchli Sheriklik va Muvaffaqiyatli Kelajak Sari
+  </p>
+
+  <!-- Handshake Image Container -->
+  <div style="position:relative;width:580px;height:240px;margin:0 auto 20px auto;border-radius:16px;overflow:hidden;border:1px solid rgba(238,53,38,0.5);box-shadow:0 16px 44px rgba(0,0,0,0.7), 0 0 30px rgba(238,53,38,0.18)">
+    <img src="assets/handshake.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;display:block" alt="Hamkorlik Qo'l Siqishish">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(20,21,23,0.02) 0%, rgba(20,21,23,0.2) 60%, rgba(20,21,23,0.85) 100%)"></div>
+    <div style="position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:14px">
+      <div style="background:rgba(20,21,23,0.85);border:1px solid rgba(238,53,38,0.6);border-radius:20px;padding:6px 20px;font-size:12.5px;font-weight:700;color:#FFA59C;backdrop-filter:blur(6px)">
+        🤝 Strategik Hamkorlik
+      </div>
+      <div style="background:rgba(20,21,23,0.85);border:1px solid rgba(16,185,129,0.6);border-radius:20px;padding:6px 20px;font-size:12.5px;font-weight:700;color:#6EE7B7;backdrop-filter:blur(6px)">
+        💼 Ishonchli va Barqaror Kelajak
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+    <div style="background:rgba(238,53,38,0.15);border:1px solid rgba(238,53,38,0.5);border-radius:30px;padding:10px 26px;font-size:13.5px;font-weight:700;color:#FFA59C">
+      🤝 O'zaro Manfaatli Hamkorlik
+    </div>
+    <div style="background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.5);border-radius:30px;padding:10px 26px;font-size:13.5px;font-weight:700;color:#6EE7B7">
+      📈 Barqaror O'sish & Yuqori Daromad
+    </div>
+    <div style="background:rgba(185,190,194,0.15);border:1px solid rgba(185,190,194,0.35);border-radius:30px;padding:10px 26px;font-size:13.5px;font-weight:700;color:var(--white)">
+      🔒 100% Shaffof va Himoyalangan Kapital
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ======================= SLIDE 28: THANK YOU ======================= -->
+<div class="slide dark" data-slide="27">
 <img src="assets/hero-bg.jpg" class="bg-image" style="opacity:0.15" alt="">
 <div class="bg-overlay"></div>
 <div class="slide-inner" style="text-align:center">

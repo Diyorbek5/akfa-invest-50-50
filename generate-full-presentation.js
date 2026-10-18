@@ -457,11 +457,11 @@ const data2025 = {
 
 const dataForecast = {
   turnover: [16000000000, 17000000000, 18000000000, 21000000000, 24000000000, 26000000000, 27000000000, 30000000000, 30000000000, 26000000000, 23000000000, 18000000000],
-  profit:   [ 420000000,  460000000,  500000000,  620000000,  820000000,  900000000, 1040000000, 1060000000, 1060000000,  900000000,  780000000,  480000000],
+  profit:   [ 210000000,  230000000,  250000000,  310000000,  410000000,  450000000,  520000000,  530000000,  530000000,  450000000,  390000000,  240000000],
   totalTurnover: 276000000000,
-  totalProfit: 9040000000,
-  avgProfit: 753333333,
-  margin: 3.28
+  totalProfit: 4520000000,
+  avgProfit: 376666667,
+  margin: 1.64
 };
 
 // -------------------------------------------------------------
@@ -868,8 +868,8 @@ const dataForecast = {
 
   const cardsF = [
     { title: 'PROGNOZ JAMI AYLANMA', val: '276.00 mlrd UZS', sub: '2025 ga nisbatan: +107% o‘sish', col: C_WHITE },
-    { title: 'PROGNOZ SOF FOYDA', val: '9.04 mlrd UZS', sub: '2025 ga nisbatan: +249% o‘sish', col: C_GREEN },
-    { title: 'O‘RTACHA FOYDA MARJASI', val: '3.28%', sub: 'Hajm hisobiga marja tiklanishi', col: C_RED },
+    { title: 'PROGNOZ SOF FOYDA', val: '4.52 mlrd UZS', sub: '2025 ga nisbatan: +74% o‘sish', col: C_GREEN },
+    { title: 'O‘RTACHA FOYDA MARJASI', val: '1.64%', sub: 'Hajm hisobiga marja tiklanishi', col: C_RED },
     { title: 'AYLANMADAGI KAPITAL', val: '$3,000,000', sub: 'Iyul oyida aylanmada turgan summa', col: C_WHITE }
   ];
 
@@ -887,7 +887,7 @@ const dataForecast = {
   // Chart: Historical vs Forecast
   const compFore = [
     { name: 'Aylanma (mlrd UZS)', labels: ['2023', '2024', '2025', 'Prognoz'], values: [193.24, 172.20, 133.10, 276.00] },
-    { name: 'Sof Foyda (mlrd UZS)', labels: ['2023', '2024', '2025', 'Prognoz'], values: [5.92, 4.63, 2.59, 9.04] }
+    { name: 'Sof Foyda (mlrd UZS)', labels: ['2023', '2024', '2025', 'Prognoz'], values: [5.92, 4.63, 2.59, 4.52] }
   ];
   s.addChart(pres.ChartType.bar, compFore, {
     x: 0.8, y: 4.0, w: 11.7, h: 3.0,
@@ -922,7 +922,7 @@ const dataForecast = {
     const turn = dataForecast.turnover[idx];
     const prof = dataForecast.profit[idx];
     const mrg = ((prof / turn) * 100).toFixed(2) + '%';
-    const note = (idx === 6) ? '3,000,000 $ (Pik)' : (idx === 0 ? '753.3 mln o‘rtacha daromad' : '-');
+    const note = (idx === 6) ? '3,000,000 $ (Pik)' : (idx === 0 ? '376.7 mln o‘rtacha daromad' : '-');
 
     tableRows.push([
       { text: m, options: { color: C_WHITE, fill: { color: idx % 2 === 0 ? C_PANEL : C_CARD } } },
@@ -938,7 +938,7 @@ const dataForecast = {
     { text: formatNum(dataForecast.totalTurnover), options: { bold: true, color: C_WHITE, align: 'right', fill: { color: C_GREEN } } },
     { text: formatNum(dataForecast.totalProfit), options: { bold: true, color: C_WHITE, align: 'right', fill: { color: C_GREEN } } },
     { text: dataForecast.margin.toFixed(2) + '%', options: { bold: true, color: C_WHITE, align: 'right', fill: { color: C_GREEN } } },
-    { text: '9.04 mlrd sof foyda', options: { bold: true, color: C_WHITE, align: 'right', fill: { color: C_GREEN } } }
+    { text: '4.52 mlrd sof foyda', options: { bold: true, color: C_WHITE, align: 'right', fill: { color: C_GREEN } } }
   ]);
 
   s.addTable(tableRows, {
@@ -1272,7 +1272,51 @@ const dataForecast = {
 }
 
 // -------------------------------------------------------------
-// SLIDE 24: ALOQA VA YAKUNIY SLAYD
+// SLIDE 24: STRATEGIK HAMKORLIK — YANGI HAMKORLIGIMIZ BARAKALI BO'LSIN!
+// -------------------------------------------------------------
+{
+  const s = pres.addSlide();
+  s.background = { color: C_DARK };
+  addSlideHeader(s, "Yangi Hamkorligimiz Barakali Bo'lsin!", "23. STRATEGIK HAMKORLIK");
+
+  s.addText("AKFA Dilerlik Biznesi & Investor — Ishonchli Sheriklik va Muvaffaqiyatli Kelajak Sari", {
+    x: 0.8, y: 1.45, w: 11.7, h: 0.4, fontSize: 13, color: C_SILVER, align: 'center'
+  });
+
+  const handshakeImg = path.join(__dirname, 'assets', 'handshake.jpg');
+  if (fs.existsSync(handshakeImg)) {
+    s.addImage({
+      path: handshakeImg,
+      x: 3.66, y: 2.0, w: 6.0, h: 2.7,
+      sizing: { type: 'cover' }
+    });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, {
+      x: 3.66, y: 2.0, w: 6.0, h: 2.7, rectRadius: 0.1,
+      line: { color: C_RED, width: 1.5 }, fill: { type: 'none' }
+    });
+  }
+
+  // Badges below image
+  const badges = [
+    { text: "🤝 O'zaro Manfaatli Hamkorlik", col: C_RED },
+    { text: "📈 Barqaror O'sish & Yuqori Daromad", col: C_GREEN },
+    { text: "🔒 100% Shaffof va Himoyalangan Kapital", col: C_WHITE }
+  ];
+  badges.forEach((b, i) => {
+    const bx = 1.6 + i * 3.5;
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, {
+      x: bx, y: 5.0, w: 3.2, h: 0.65, rectRadius: 0.3,
+      fill: { color: C_PANEL }, line: { color: b.col, width: 1.2 }
+    });
+    s.addText(b.text, {
+      x: bx, y: 5.0, w: 3.2, h: 0.65,
+      fontSize: 11, bold: true, color: b.col, align: 'center', valign: 'middle'
+    });
+  });
+}
+
+// -------------------------------------------------------------
+// SLIDE 25: ALOQA VA YAKUNIY SLAYD
 // -------------------------------------------------------------
 {
   const s = pres.addSlide();

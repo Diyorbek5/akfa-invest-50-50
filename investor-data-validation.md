@@ -32,7 +32,7 @@
 | 2025 jami aylanma | 133,100,000,000 | 12 oy yig'indisi: 133,100,000,000 | ✅ Ha |
 | 2025 jami foyda | 2,592,000,000 | 12 oy yig'indisi: 2,592,000,000 | ✅ Ha |
 | Prognoz jami aylanma | 276,000,000,000 | 12 oy yig'indisi: 276,000,000,000 | ✅ Ha |
-| Prognoz jami foyda | 9,040,000,000 | 12 oy yig'indisi: 9,040,000,000 (Iyul oyiga +100 mln so'm qo'shilgan) | ✅ Ha |
+| Prognoz jami foyda | 4,520,000,000 | 12 oy yig'indisi: 4,520,000,000 | ✅ Ha |
 
 ### Mablag'lar taqsimoti tekshiruvi
 | Yo'nalish | Summa ($) | Manba |
